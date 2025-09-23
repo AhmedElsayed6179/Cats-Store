@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishmish Cat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cats/cat.png" type="image/x-icon">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" aria-label="Loading">
+        <div class="loader" role="progressbar" aria-busy="true"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#hero" class="logo">Mishmish <span>Cat</span></a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#featured">Cats</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="index.html">AR</a></li>
+                <li>
+                    <a href="#" class="cart-icon">
+                        🛒 <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 🛒 Shopping Cart -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <h3>🛒 Shopping Cart</h3>
+        <ul class="cart-items" id="cartItems">
+            <!-- Products will be added here -->
+        </ul>
+
+        <div class="cart-footer">
+            <p>Total: <span id="cartTotal">0</span> EGP</p>
+            <button class="clear-cart">Clear All</button>
+            <button class="close-cart">Close</button>
+        </div>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <h1>Find Your Perfect Cat Companion</h1>
+            <p>We provide healthy and happy kittens, along with premium care products</p>
+            <a href="#featured" class="btn">Browse Cats</a>
+            <a href="#products" class="btn btn-secondary">Shop Products</a>
+        </div>
+    </section>
+
+    <!-- Featured Cats -->
+    <section id="featured" class="featured-cats">
+        <div class="container">
+            <h2 class="section-title">Featured Cats</h2>
+            <div class="cats-grid">
+                <!-- Cat 1 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="White cat with blue eyes">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">Snowy</h3>
+                        <p class="cat-breed">Persian • 3 months</p>
+                        <p class="cat-price">850 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cat 2 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="cats/cat 6.jpg" alt="Small tabby cat with green eyes">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">Whiskers</h3>
+                        <p class="cat-breed">Tabby • 2 months</p>
+                        <p class="cat-price">720 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cat 3 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="cats/cat 5.webp" alt="Siamese cat with blue eyes">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">Luna</h3>
+                        <p class="cat-breed">Siamese • 4 months</p>
+                        <p class="cat-price">930 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Cat 4 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Gray British Shorthair cat">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">Misty</h3>
+                        <p class="cat-breed">British Shorthair • 3 months</p>
+                        <p class="cat-price">600 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Cat Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/food.jpg" alt="Healthy cat food">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Premium Cat Food</h3>
+                        <p class="product-price">200 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/Cat-house-4.4.4-Photoroom.webp" alt="Comfortable cat bed">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Comfortable Cat Bed</h3>
+                        <p class="product-price">350 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/cat game.jpg" alt="Interactive cat toy">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Interactive Toy</h3>
+                        <p class="product-price">120 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/cat game 2.webp" alt="Cat scratching post">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Scratching Post</h3>
+                        <p class="product-price">400 EGP</p>
+                        <button class="btn add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="cats/cat family 2.jpg" alt="cat family">
+                </div>
+                <div class="about-text">
+                    <h2>We Love Cats</h2>
+                    <p>Mishmish Cat Store aims to provide healthy and happy kittens for loving families.</p>
+                    <p>All our cats undergo veterinary checks, receive necessary vaccinations, and are raised in a home
+                        filled with love and care.</p>
+                    <p>Our team of experts and passionate breeders are committed to finding the perfect match between
+                        the family and their new companion.</p>
+                    <a href="#" id="about-btn" class="btn">Learn More</a>
+                </div>
+                <div class="about-extra" id="about-extra">
+                    <p>Our cats are playful and energetic, and we ensure every adoption is a special experience for the
+                        family.</p>
+                    <p>We provide daily tips on nutrition and care to ensure long-term health and happiness for your
+                        cat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Testimonials -->
+    <section class="testimonials">
+        <div class="container testimonials-container">
+            <h2 class="section-title">Customer Reviews</h2>
+            <div class="testimonial">
+                <p class="testimonial-text">"Amazing experience! The cat I adopted from here is in excellent health."
+                </p>
+                <p class="testimonial-author">- Doaa, Alexandria</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"High-quality products and excellent customer service."</p>
+                <p class="testimonial-author">- Ahmed, Alexandria</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"Best cat adoption experience, the website is easy to use and the cats are
+                    happy and healthy."</p>
+                <p class="testimonial-author">- Shaimaa, Alexandria</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">How can I adopt a cat?</h3>
+                <p class="faq-answer">Contact us, choose the right cat, and complete the process with the veterinarian.
+                </p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Are the cats vaccinated?</h3>
+                <p class="faq-answer">Yes, all our cats are vaccinated and medically checked.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">What is the best age to adopt a cat?</h3>
+                <p class="faq-answer">It’s best to adopt cats after 8 weeks of age to ensure their health and
+                    independence.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I adopt more than one cat at the same time?</h3>
+                <p class="faq-answer">Yes, you can adopt more than one cat as long as they are compatible in terms of
+                    personality and age.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">Can I visit the cat before adoption?</h3>
+                <p class="faq-answer">Of course, you can arrange a visit to meet the cat and ensure compatibility before
+                    completing the adoption.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Process -->
+    <section class="adoption" id="adoption">
+        <div class="container">
+            <h2 class="section-title">Adoption Process</h2>
+            <div class="adoption-steps">
+                <div class="step">
+                    <h3>1. Choose Your Cat</h3>
+                    <p>Browse available cats and choose the one that suits your lifestyle.</p>
+                </div>
+                <div class="step">
+                    <h3>2. Submit Application</h3>
+                    <p>Fill out the adoption form to submit an official request and provide necessary details.</p>
+                </div>
+                <div class="step">
+                    <h3>3. Interview & Evaluation</h3>
+                    <p>We’ll contact you to schedule an interview and assess the suitable environment for the cat.</p>
+                </div>
+                <div class="step">
+                    <h3>4. Receive Your Cat</h3>
+                    <p>After approval, you can take your cat home and start your new life together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>🏠 Home Care</h3>
+                    <p>We provide cats raised in a safe and healthy home environment.</p>
+                </div>
+                <div class="service">
+                    <h3>🚚 Safe Delivery</h3>
+                    <p>Delivery of cats and products to your doorstep with special care.</p>
+                </div>
+                <div class="service">
+                    <h3>🎓 Training & Tips</h3>
+                    <p>Guidance and daily tips for raising and caring for cats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="section-title">Our Blog</h2>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <h3>How to Choose the Right Cat for Your Family?</h3>
+                    <p>Choosing a cat depends on your personality and lifestyle. Learn about the differences between
+                        breeds.</p>
+                    <div class="blog-extra">
+                        <p>The perfect cat depends on its personality, activity level, and compatibility with family
+                            members. Always provide a safe and loving environment.</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary blog-btn">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Safe and Healthy Foods for Cats</h3>
+                    <p>Learn about the best healthy foods for cats and what to avoid completely.</p>
+                    <div class="blog-extra">
+                        <p>To keep your cat healthy, feed them balanced meals suitable for their age, and avoid harmful
+                            foods like chocolate or onions.</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary blog-btn">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">Photo Gallery</h2>
+            <div class="gallery-grid">
+                <img src="cats/cat 1.jpg" alt="Cat 1" data-title="Small White Cat"
+                    data-desc="This cat loves to play a lot and enjoys sleeping by the sun.">
+
+                <img src="cats/cat 2.jpg" alt="Cat 2" data-title="Cute Gray Cat"
+                    data-desc="This gray cat is very friendly, loves cuddles, and enjoys interacting with children.">
+
+                <img src="cats/cat 3.jpg" alt="Cat 3" data-title="Playful White Cat"
+                    data-desc="An active cat that loves running and playing with small toys.">
+
+                <img src="cats/cat 4.jpg" alt="Cat 4" data-title="Playful Orange Cat"
+                    data-desc="A calm cat that enjoys sitting in dark places and prefers quiet environments.">
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <h3 class="lightbox-title"></h3>
+            <p class="lightbox-desc"></p>
+        </div>
+    </div>
+
+    <!-- 📊 Stats -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">Our Numbers Speak</h2>
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>+200</h3>
+                    <p>Cats Adopted</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>+500</h3>
+                    <p>Happy Customers</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>+10</h3>
+                    <p>Years of Experience</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>+50</h3>
+                    <p>Cat Products</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter-title">Subscribe to Our Newsletter</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="section-title">Leave a Message</h2>
+            <form id="messageForm">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Mishmish Cat</h3>
+                    <p>We provide warm and safe homes for all cats.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#featured">Cats</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#adoption">Adoption Process</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>📍 123 Cat Street, Meowtown</li>
+                        <li>📞 +20 101 234 5678</li>
+                        <li>📧 info@mishmishcats.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 <span>Mishmish Cat.</span> All Rights Reserved.</p>
+                <p>Website created by <a href="https://ahmedelsayed6179.github.io/Ahmed-Websites/" target="_blank">Ahmed
+                        Elsayed.</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

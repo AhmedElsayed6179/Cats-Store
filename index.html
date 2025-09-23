@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القطة المشمشية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cats/cat.png" type="image/x-icon">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader" aria-label="Loading">
+        <div class="loader" role="progressbar" aria-busy="true"></div>
+    </div>
+
+    <!-- الهيدر -->
+    <header>
+        <div class="container header-container">
+            <a href="#hero" class="logo">القطة <span>المشمشية</span></a>
+            <div class="hamburger">☰</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#featured">القطط</a></li>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#about">من نحن</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+                <li><a href="engish.html">EN</a></li>
+                <li>
+                    <a href="#" class="cart-icon">
+                        🛒 <span class="cart-count">0</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 🛒 سلة المشتريات -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <h3>🛒 سلة المشتريات</h3>
+        <ul class="cart-items" id="cartItems">
+            <!-- المنتجات هتضاف هنا -->
+        </ul>
+
+        <div class="cart-footer">
+            <p>الإجمالي: <span id="cartTotal">0</span> ج.م</p>
+            <button class="clear-cart">مسح الكل</button>
+            <button class="close-cart">إغلاق</button>
+        </div>
+    </div>
+
+    <!-- البانر -->
+    <section class="hero" id="hero">
+        <div class="container hero-content">
+            <h1>اعثر على صديقك القط المثالي</h1>
+            <p>نوفر قطط صغيرة صحية وسعيدة، ومنتجات ممتازة للعناية بها</p>
+            <a href="#featured" class="btn">تصفح القطط</a>
+            <a href="#products" class="btn btn-secondary">تسوق المنتجات</a>
+        </div>
+    </section>
+
+    <!-- قسم القطط المميزة -->
+    <section id="featured" class="featured-cats">
+        <div class="container">
+            <h2 class="section-title">قطط مميزة</h2>
+            <div class="cats-grid">
+                <!-- قطة 1 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="https://images.pexels.com/photos/45201/kitty-cat-kitten-pet-45201.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="قطة بيضاء بعيون زرقاء">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">ثلجية</h3>
+                        <p class="cat-breed">فارسي • 3 شهور</p>
+                        <p class="cat-price">850 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- قطة 2 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="cats/cat 6.jpg" alt="قطة بنية مرقطة صغيرة بعيون خضراء">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">شوارب</h3>
+                        <p class="cat-breed">تابي • شهرين</p>
+                        <p class="cat-price">720 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- قطة 3 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="cats/cat 5.webp" alt="قطة سيامي بعيون زرقاء">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">لونا</h3>
+                        <p class="cat-breed">سيامي • 4 شهور</p>
+                        <p class="cat-price">930 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- قطة 4 -->
+                <div class="cat-card">
+                    <div class="cat-image">
+                        <img src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="قطة رمادية بريتش شورت هير">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="cat-name">ضبابية</h3>
+                        <p class="cat-breed">بريتش شورت هير • 3 شهور</p>
+                        <p class="cat-price">600 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">منتجات القطط</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/food.jpg" alt="طعام قطط صحي">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">طعام قطط فاخر</h3>
+                        <p class="product-price">200 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/Cat-house-4.4.4-Photoroom.webp" alt="سرير قطط مريح">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">سرير قطط مريح</h3>
+                        <p class="product-price">350 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/cat game.jpg" alt="لعبة قطط تفاعلية">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">لعبة تفاعلية</h3>
+                        <p class="product-price">120 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="cats/cat game 2.webp" alt="عمود خدش للقطط">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">عمود خدش</h3>
+                        <p class="product-price">400 جنيه</p>
+                        <button class="btn add-to-cart">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- من نحن -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">من نحن</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="cats/cat family 2.jpg" alt="cat family">
+                </div>
+                <div class="about-text">
+                    <h2>نحن نحب القطط</h2>
+                    <p>موقع القطة المشمشية يهدف لتوفير قطط صغيرة صحية وسعيدة للعائلات المحبة.</p>
+                    <p>جميع قططنا تخضع للفحص البيطري، وتتلقى التطعيمات اللازمة، وتربى في بيئة منزلية مليئة بالحب
+                        والرعاية.</p>
+                    <p>فريقنا من خبراء ومربين شغوفين بالقطط، ملتزمون بإيجاد التوافق المثالي بين العائلة ورفيقها الجديد.
+                    </p>
+                    <a href="#" id="about-btn" class="btn">اعرف المزيد</a>
+                </div>
+                <div class="about-extra" id="about-extra">
+                    <p>قططنا تتميز بالمرح والحيوية، ونحرص على أن تكون كل تجربة تبني تجربة مميزة للعائلة.</p>
+                    <p>نوفر نصائح يومية حول التغذية والرعاية لضمان سعادة وصحة القطط على المدى الطويل.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم آراء العملاء -->
+    <section class="testimonials">
+        <div class="container testimonials-container">
+            <h2 class="section-title">آراء عملائنا</h2>
+            <div class="testimonial">
+                <p class="testimonial-text">"تجربة رائعة! القط اللي تبنيته من هنا بصحة ممتازة."</p>
+                <p class="testimonial-author">- دعاء، الإسكندرية</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"منتجات عالية الجودة وخدمة عملاء ممتازة."</p>
+                <p class="testimonial-author">- احمد، الإسكندرية</p>
+            </div>
+            <div class="testimonial">
+                <p class="testimonial-text">"أفضل تجربة تبني قطط، الموقع سهل الاستخدام والقطط سعيدة وصحية."</p>
+                <p class="testimonial-author">- شيماء، الإسكندرية</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section class="faq">
+        <div class="container">
+            <h2 class="section-title">الأسئلة الشائعة</h2>
+            <div class="faq-item">
+                <h3 class="faq-question">كيف أتبنى قطة؟</h3>
+                <p class="faq-answer">تتواصل معنا، تختار القطة المناسبة، وتكمل الإجراءات مع الطبيب البيطري.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">هل القطط مطعمة؟</h3>
+                <p class="faq-answer">نعم، جميع القطط لدينا مطعمة ومفحوصة طبياً.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">ما هو العمر المناسب لتبني القطة؟</h3>
+                <p class="faq-answer">يفضل تبني القطط بعد اكتمال عمرها 8 أسابيع، لضمان صحتها واستقلالها الغذائي.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">هل يمكن تبني أكثر من قطة في نفس الوقت؟</h3>
+                <p class="faq-answer">نعم، يمكن تبني أكثر من قطة بشرط أن تكون القطة الثانية متوافقة مع القطة الأولى من
+                    حيث الشخصية والعمر.</p>
+            </div>
+            <div class="faq-item">
+                <h3 class="faq-question">هل يمكن زيارة القطة قبل التبني؟</h3>
+                <p class="faq-answer">بالطبع، يمكن ترتيب زيارة لمشاهدة القطة والتأكد من توافقها مع العائلة قبل إتمام
+                    عملية التبني.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- عملية التبني -->
+    <section class="adoption" id="adoption">
+        <div class="container">
+            <h2 class="section-title">عملية التبني</h2>
+            <div class="adoption-steps">
+                <div class="step">
+                    <h3>1. اختيار القطة</h3>
+                    <p>تصفح القطط المتاحة واختر القطة التي تناسب أسلوب حياتك.</p>
+                </div>
+                <div class="step">
+                    <h3>2. تقديم الطلب</h3>
+                    <p>املأ نموذج التبني لتقديم طلب رسمي وتحديد التفاصيل اللازمة.</p>
+                </div>
+                <div class="step">
+                    <h3>3. المقابلة والتقييم</h3>
+                    <p>سنتواصل معك لتحديد موعد لمقابلة وتقييم البيئة المناسبة للقطة.</p>
+                </div>
+                <div class="step">
+                    <h3>4. استلام القطة</h3>
+                    <p>بعد الموافقة على الطلب، يمكنك استلام القطة والبدء في حياتكم المشتركة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- خدماتنا -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">خدماتنا</h2>
+            <div class="services-grid">
+                <div class="service">
+                    <h3>🏠 رعاية منزلية</h3>
+                    <p>نوفر قطط يتم تربيتها في بيئة منزلية آمنة وصحية.</p>
+                </div>
+                <div class="service">
+                    <h3>🚚 توصيل آمن</h3>
+                    <p>توصيل القطط والمنتجات لباب بيتك مع عناية خاصة.</p>
+                </div>
+                <div class="service">
+                    <h3>🎓 تدريب ونصائح</h3>
+                    <p>إرشادات ونصائح لتربية القطط والعناية بها يومياً.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المدونة -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="section-title">مدونتنا</h2>
+            <div class="blog-grid">
+                <article class="blog-post">
+                    <h3>كيف تختار القطة المناسبة لعائلتك؟</h3>
+                    <p>اختيار القطة يعتمد على شخصيتك وروتين حياتك. تعرف على الفروقات بين السلالات.</p>
+                    <div class="blog-extra">
+                        <p>اختيار القطة المثالية يعتمد على شخصيتها، مستوى نشاطها، وتوافقها مع أفراد العائلة. احرص على
+                            توفير بيئة آمنة ومحبة.</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary blog-btn">اقرأ المزيد</a>
+                </article>
+                <article class="blog-post">
+                    <h3>أطعمة آمنة ومفيدة للقطط</h3>
+                    <p>تعرف على أفضل الأطعمة الصحية للقطط وما يجب تجنبه تمامًا.</p>
+                    <div class="blog-extra">
+                        <p>للحفاظ على صحة قطتك، قدّم لها أطعمة متوازنة ومناسبة لعمرها، مع الحرص على الابتعاد عن الأطعمة
+                            الضارة مثل الشوكولاتة أو البصل.</p>
+                    </div>
+                    <a href="#" class="btn btn-secondary blog-btn">اقرأ المزيد</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم معرض الصور -->
+    <section class="gallery">
+        <div class="container">
+            <h2 class="section-title">معرض صور</h2>
+            <div class="gallery-grid">
+                <img src="cats/cat 1.jpg" alt="قطة 1" data-title="قطة بيضاء صغيرة"
+                    data-desc="هذه القطة تحب اللعب كثيرًا وتحب النوم بجانب الشمس.">
+
+                <img src="cats/cat 2.jpg" alt="قطة 2" data-title="قطة رمادية لطيفة"
+                    data-desc="القطة رمادية ودودة جدًا، تحب العناق والتفاعل مع الأطفال.">
+
+                <img src="cats/cat 3.jpg" alt="قطة 3" data-title="قطة بيضاء مرحة"
+                    data-desc="قطة نشيطة، تحب الركض واللعب بالألعاب الصغيرة.">
+
+                <img src="cats/cat 4.jpg" alt="قطة 4" data-title="قطة برتقالية مرحة"
+                    data-desc="قطة هادئة، تحب الجلوس في الأماكن المظلمة وتفضل الهدوء.">
+            </div>
+        </div>
+    </section>
+
+    <!-- نافذة تكبير الصور (Lightbox) -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img src="" alt="">
+            <h3 class="lightbox-title"></h3>
+            <p class="lightbox-desc"></p>
+        </div>
+    </div>
+
+    <!-- 📊 إحصائيات -->
+    <section class="stats">
+        <div class="container">
+            <h2 class="section-title">أرقامنا تتحدث</h2>
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <h3>+200</h3>
+                    <p>قطة تم تبنيها</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>+500</h3>
+                    <p>عميل سعيد</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>+10</h3>
+                    <p>سنوات خبرة</p>
+                </div>
+
+                <div class="stat-card">
+                    <h3>+50</h3>
+                    <p>منتج مخصص للقطط</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- نشرة بريدية -->
+    <section class="newsletter">
+        <div class="container">
+            <h2 class="newsletter-title">اشترك في نشرتنا</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="ادخل بريدك الإلكتروني" required>
+                <button type="submit" class="btn">اشترك</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- قسم نموذج الاتصال     -->
+    <section class="contact-form">
+        <div class="container">
+            <h2 class="section-title">اترك رسالة</h2>
+            <form id="messageForm">
+                <input type="text" placeholder="الاسم" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+                <textarea placeholder="رسالتك" required></textarea>
+                <button type="submit" class="btn">إرسال</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>القطة المشمشية</h3>
+                    <p>نوفر بيوتاً دافئة وآمنة لجميع القطط.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#hero">الرئيسية</a></li>
+                        <li><a href="#featured">القطط</a></li>
+                        <li><a href="#products">المنتجات</a></li>
+                        <li><a href="#about">من نحن</a></li>
+                        <li><a href="#adoption">عملية التبني</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>تواصل معنا</h3>
+                    <ul>
+                        <li>📍 شارع القطط 123، مياونغتون</li>
+                        <li>📞 (555) 123-MEOW</li>
+                        <li>✉️ info@purrfectcompanions.com</li>
+                        <li>🕒 الإثنين - السبت: 10ص - 6م</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 <span>القطة المشمشية.</span> جميع الحقوق محفوظة.</p>
+                <p>تم انشاء الموقع بواسطة <a href="https://ahmedelsayed6179.github.io/Ahmed-Websites/"
+                        target="_blank">احمد السيد.</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
