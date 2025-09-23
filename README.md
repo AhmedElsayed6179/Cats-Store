@@ -1,7 +1,6 @@
 # Cats Store
 
 **Cats Store** is a website built using **HTML, CSS, and JavaScript**.  
-The site content is **entirely in Arabic**, designed to provide information about kittens, their care, and fun tips for cat lovers.
 
 ## Features
 - Gallery of cats with descriptions
